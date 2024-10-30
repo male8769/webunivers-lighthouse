@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deltag</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deltag-body">
+    <header>
+        <nav class="navbar">
+
+        <!-- ul>li*5>a sådan laver man en genvej til at lave 5 lister med et anchor-->
+        <ul> 
+            <!-- her har jeg brugt a.logo til at lave en genvej til et anchor der hedder logo-->
+             <!--her bruger jeg ../ til at nå over i mappen navbar-->
+             <li><a href="../index.html" class="logo">Artsy Space</a></li>
+            
+            <li><a href="../navbar/om-os.html">Om Os +</a>
+                <ul>
+                    <li><a href="#">Teamet bag</a></li>
+                    <li><a href="#">Kontaktinformation</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../navbar/diy-projekter.html">DIY Projekter +</a>
+                <ul>
+                    <li><a href="#">Kategorier +</a>
+                        <ul>
+                            <li><a href="#">Malerier</a></li>
+                            <li><a href="#">Vægkunst</a></li>
+                            <li><a href="#">Upcycling</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Genbrugs Projekter</a></li>
+                    <li><a href="#">Video Tutorials</a></li>
+                    <li><a href="#">Trin-for-Trin Vejledning</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../navbar/faellesskab-brugerindsendt.html">Fællesskab +</a>
+                <ul>
+                    <li><a href="#">Brugerindsendt +</a>
+                        <ul>
+                            <li><a href="#">Historier</a></li>
+                            <li><a href="#">Projekter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="../navbar/deltag.html">Deltag</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="deltag-main">
+<h1>Kom og vær med i det kreative med os</h1>
+
+
+<form action="#" class="kontakt-form">
+    <label for="fnavn">Fornavn</label>
+    <input type="text" name="fnavn" id="fnavn" required>
+    
+    <label for="enavn">Efternavn</label>
+    <input type="text" name="enavn" id="enavn" required>
+    
+    <label for="mail">Email</label>
+    <input type="email" name="mail" id="mail" required>
+
+    <label for="kommentar">Kommentar</label>
+    <textarea name="kommentar" id="kommentar" placeholder="Skriv en kommentar her..." required></textarea>
+    
+    <button type="submit">Send kommentar</button>
+</form>
+
+</main>
+
+</body>
+</html>

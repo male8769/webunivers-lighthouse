@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #B3DDF2;   
+    --secondary-color: #ddf4ff; 
+    --tertiary-color: aliceblue; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/*styling for navbar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:var(--primary-color);
+    padding: 0 20px;
+    position: relative;
+    /*prøv at gøre navbaren sticky hvis du husker det*/
+
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color:var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin-right: 550px; /*jeg ved godt at det ikke har fixet mit problem, men nu står det i midten når man har hele side åben, og jeg kan ikke finde en anden løsning lige nu*/
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: black;
+}
+.navbar ul li:first-child{
+    margin-right: auto;
+} 
+
+.navbar ul li a:hover {
+    background-color:var(--primary-color);
+}
+.logo{
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+/* Dropdown styling */
+.navbar ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--secondary-color);
+}
+
+.navbar ul ul li {
+    display: block;
+    width: 200px;
+}
+
+.navbar ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+.navbar ul li:hover > ul {
+    display: block;
+}
+
+/* Menu label styling (for mobile navigation) */
+#menu-bar {
+    display: none;
+}
+
+
+/*index.html*/
+.index-body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+.index-header{
+  flex-direction: column; /*ved ikke helt om det er rigtigt men jeg for se*/ 
+  display: flex;
+    justify-content: space-between;
+}
+
+.index-main img{
+width: 100%;
+max-width: 200px;
+}
+#overskrift {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.blomst-container {
+    display: flex;               
+    align-items: center;        
+    justify-content: space-between; 
+}
+
+.text-container {
+    text-align: center;         
+    margin: 0 20px;            
+}
+
+#overskrift h1 {
+    font-size: 2.5rem;
+    color: #5182a5;
+}
+
+#overskrift p {
+    font-size: 1.2rem;
+    color: #5182a5;
+}
+
+#blomst-1, #blomst-2 {
+    width: 100px;              
+    height: auto; 
+    margin: auto;
+    display: flex;
+                 
+}
+
+
+/*første 2 artikler billeder*/
+.artikler {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.artikler article {
+    flex: 1 1 45%; 
+    text-align: center; 
+}
+
+.artikler img {
+    max-width: 100%; 
+    height: 50rem;
+    object-fit: cover; 
+    padding: 30px;
+    border-radius: 100px;
+}
+
+.artikler h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #5182a5;
+}
+
+.artikler-2 {
+    display: flex;                
+    justify-content: space-between; 
+    flex-wrap: wrap;             
+    gap: 20px; 
+    margin-top: 20px;
+    margin-bottom: 20px;              
+}
+
+.artikler-2 article {
+    flex: 1 1 30%;               
+    text-align: center;      
+    border-radius: 10px;        
+    overflow: hidden;            
+    background-color: #f9f9f9;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;           
+}
+
+.artikler-2 img { 
+    max-width: 100%;             
+    height: 35rem;              
+    border-radius: 10px;        
+    object-fit: cover; 
+    padding: 10%; 
+}
+
+.artikler-2 h2 {
+    margin-top: 10px;           
+    font-size: 1.2em;           
+    color: #5182a5;             
+}
+
+
+/*button*/
+
+    .button{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 20vh;
+    }
+    .button button {
+        background-color: var(--primary-color);
+        border: none;
+        color: #5182a5;
+        padding:    10px 20px;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-align: center;
+    }
+
+    .button button:hover {
+        background-color: #A0C8E4;
+    }
+
+    /*nummer 1 artikel diy vægkunst*/
+    .diy-vægkunst {
+        background-color: var(--tertiary-color);
+        padding: 30px; /* Increased padding for more space */
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+        margin: 20px auto; 
+        max-width: 600px; 
+        text-align: center; /* Align text to left for better reading flow */
+    }
+    
+    .diy-vægkunst h1 {
+        color: #4A90E2; /* Blødere blå nuance */
+        font-size: 2.3rem; /* Let mindre størrelse */
+        margin: 30px 0 15px; /* Mere plads over og under */
+        text-align: center; /* Center the text */
+        font-weight: bold; /* Gør teksten fed */
+        text-transform: uppercase; /* Gør teksten til store bogstaver for mere visuel effekt */
+        }      
+    
+    .diy-vægkunst h3 {
+        color: #333; 
+        margin-top: 20px; 
+        font-size: 1.8rem; /* Increased size for subheadings */
+    }
+    
+    .diy-vægkunst p {
+        color: #555; 
+        margin-bottom: 20px; 
+        font-size: 1.1rem; /* Slightly larger text for better readability */
+    }
+    
+    /* List Styles */
+    .diy-vægkunst ul,
+    .diy-vægkunst ol {
+        padding-left: 20px; 
+        margin-bottom: 20px; 
+    }
+    
+    .diy-vægkunst ul {
+        list-style-type: disc;
+        
+    }
+    
+    /* Image Styles */
+    .artikel-1 {
+        text-align: center; /* Sikrer at billedet er centreret inden for sektionen */
+    }
+    
+    .artikel-1 .collage {
+        max-width: 50%; /* Giver lidt mere plads på skærmen */
+        height: auto; 
+        border-radius: 15px; /* Rundede kanter for et blødere look */
+        margin: 30px auto; /* Centrer billedet med automatisk margin */
+        border: 2px solid #A0C8E4; /* Tynd kant for dybde */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtil skygge for dybde */
+    }
+/*nummer 2 artikel Bæredygtig Diy*/
+
+.bæredygtig-diy {
+    color: #333; /* Primær tekstfarve */
+    margin: 20px;
+    text-align: center; /* Juster tekst, hvis nødvendigt */
+}
+
+.bæredygtig-diy-h3 {
+    color: #006400; /* En mørk grøn farve for overskrifter */
+    margin: 15px 0;
+}
+
+.bæredygtig-diy-p {
+    line-height: 1.6; /* For bedre læsbarhed */
+}
+
+.artikel-2 img {
+    max-width: 100%; /* Gør billedet responsivt */
+    height: auto; /* Beholder billedets proportioner */
+}
+
+/*nummer 3 artikel som faktisk er nummer 5 artikel */
+.maling {
+    background-color: var(--tertiary-color);
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+    margin: 20px auto; 
+    max-width: 600px; 
+    text-align: center; /* Center text for better presentation */
+}
+
+.maling h1 {
+    color: #4A90E2; /* Softer blue tone */
+    font-size: 2.3rem; /* Slightly smaller size */
+    margin: 30px 0 15px; /* More space above and below */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Uppercase for more visual impact */
+}      
+
+.maling h3 {
+    color: #333; 
+    margin-top: 20px; 
+    font-size: 1.8rem; /* Increased size for subheadings */
+}
+
+.maling p {
+    color: #555; 
+    margin-bottom: 20px; 
+    font-size: 1.1rem; /* Slightly larger text for better readability */
+}
+
+/* List Styles */
+.maling ul,
+.maling ol {
+    padding-left: 20px; 
+    margin-bottom: 20px; 
+}
+
+.maling ul {
+    list-style-type: disc; 
+}
+
+/* Image Styles */
+.artikel-1 {
+    text-align: center; /* Ensure the image is centered within the section */
+}
+
+.artikel-1 .collage {
+    max-width: 50%; /* Give a bit more space on the screen */
+    height: auto; 
+    border-radius: 15px; /* Rounded corners for a softer look */
+    margin: 30px auto; /* Center the image with auto margins */
+    border: 2px solid #A0C8E4; /* Thin border for depth */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+
+/*footer*/
+footer {
+    background-color: #B3DDF2;
+    color: #333; /* Mørkere tekst for bedre kontrast */
+    padding: 40px 20px; /* Mere plads for en luftigere følelse */
+    display: flex;
+    flex-direction: column; /* Skift til kolonnevisning */
+    align-items: center; /* Centrer indholdet */
+    text-align: center; /* Centrér tekst */
+    border-top: 4px solid #A0C8E4; /* Tydeligere grænse */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
+}
+
+.footer-left {
+    margin-bottom: 20px; /* Plads mellem sektioner */
+}
+
+.footer-left img {
+    max-width: 120px; /* Juster logo størrelse for et minimalistisk udseende */
+    margin-bottom: 15px; /* Plads under logo */
+}
+
+.footer-left p {
+    margin: 10px 0;
+    font-size: 16px; /* Større tekst for bedre læsbarhed */
+    line-height: 1.5; /* Mere plads mellem linjer */
+}
+
+.footer-left form {
+    margin-top: 15px; /* Plads før formular */
+}
+
+.footer-left input {
+    padding: 12px; /* Mere polstring */
+    border: 2px solid #A0C8E4; /* Tynd grænse for at give dybde */
+    border-radius: 20px; /* Rundede kanter */
+    margin-top: 10px;
+    transition: border-color 0.3s; /* Smooth transition for focus state */
+}
+
+.footer-left input:focus {
+    border-color: #333; /* Mørkere grænse ved fokus */
+    outline: none; /* Fjern standard outline */
+}
+
+.footer-left button {
+    background-color: #A0C8E4; /* Knapfarve */
+    border: none;
+    color: white;
+    padding: 12px 20px; /* Justeret padding */
+    border-radius: 20px; /* Rundede kanter */
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.footer-left button:hover {
+    background-color: #B3DDF2; /* Lysere ved hover */
+    transform: translateY(-2px); /* Let bevægelse ved hover */
+}
+
+.footer-right {
+    margin-top: 20px; /* Plads før sektion */
+}
+
+.footer-right p {
+    margin: 5px 0;
+    font-size: 14px; /* Mindre tekst til sektionen */
+}
+
+.footer-right a {
+    color: #333; /* Mørk farve til links */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.footer-right a:hover {
+    color: #A0C8E4; /* Lysere ved hover */
+    text-decoration: underline; /* Understregning ved hover */
+}
+
+
+
+
+
+/* deltag.html*/
+
+/* Styling for deltag.html body section */
+.deltag-body{
+    background-color: aliceblue;
+}
+/* Styling for deltag.html main section */
+
+.deltag-main {
+    background-color:var(--secondary-color);
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
+    margin: 20px auto; 
+}
+
+.deltag-main h1 {
+    color: black; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.kontakt-form {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+.kontakt-form label {
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+
+.kontakt-form input, 
+.kontakt-form textarea {
+    padding: 10px; 
+    border: 1px solid #B3DDF2; 
+    border-radius: 4px; 
+    font-size: 16px; 
+}
+
+.kontakt-form button {
+    background-color: #B3DDF2; 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    border-radius: 4px;
+    font-size: 16px; 
+    cursor: pointer; /* Markør ændrer sig til pointer når musen er over */
+}
+
+.kontakt-form button:hover {
+    background-color: #A0C8E4; /* Mørkere nuance ved hover */
+}
+   

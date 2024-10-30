@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artsy Space tilbyder kreative DIY-projekter, genbrugsideer og bæredygtige dekorationer til at skabe et unikt hjem på budget.">
+
+    <title>Artsy Space - DIY Projekter, Genbrugsidéer og Hjemmelavet Dekorationer</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="index-body">
+
+    <header class="index-header">
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar"></label>
+
+    <!-- Navbar med ul/li struktur -->
+
+
+
+    <nav class="navbar">
+
+        <!-- ul>li*5>a sådan laver man en genvej til at lave 5 lister med et anchor-->
+        <ul> 
+            <!-- her har jeg brugt a.logo til at lave en genvej til et anchor der hedder logo-->
+             <li><a href="index.html" class="logo">Artsy Space</a></li>
+             
+
+            <li><a href="navbar/om-os.html">Om Os +</a>
+                <ul>
+                    <li><a href="#">Teamet bag</a></li>
+                    <li><a href="#">Kontaktinfo</a></li>
+                </ul>
+            </li>
+
+            <li><a href="navbar/diy-projekter.html">DIY Projekter +</a>
+                <ul>
+                    <li><a href="#">Kategorier +</a>
+                        <ul>
+                            <li><a href="#">Malerier</a></li>
+                            <li><a href="#">Vægkunst</a></li>
+                            <li><a href="#">Upcycling</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Genbrugs Projekter</a></li>
+                    <li><a href="#">Video Tutorials</a></li>
+                    <li><a href="#">Trin-for-Trin Vejledning</a></li>
+                </ul>
+            </li>
+
+            <li><a href="navbar/faellesskab.html">Fællesskab +</a>
+                <ul>
+                    <li><a href="navbar/deltag.html">Deltag</a></li>
+                    <li><a href="#">Brugerindsendt +</a>
+                        <ul>
+                            <li><a href="#">Historier</a></li>
+                            <li><a href="#">Projekter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+<main class="index-main">
+    <section id="overskrift">
+        <article class="blomst-container">
+            <a href="link-til-din-artikel-1" target="_blank">
+                <img id="blomst-1" src="img-2/blomster-logo-1.webp" alt="blå blomster logo">
+            </a>
+            <div class="text-container">
+                <h1>Hjemmelavet Kunst og Dekorationer</h1>
+                <p>skab dit eget personlige rum med DIY-projekter</p>
+            </div>
+            <a href="link-til-din-artikel-2" target="_blank">
+                <img id="blomst-2" src="img-2/blomster-logo-1.webp" alt="blå blomster logo">
+            </a>
+        </article>
+    </section>
+
+<!--den første section med artikler-->
+
+<section class="artikler">
+    <article>
+        <a href="artikler/artikel-1.html">
+            <img src="img-2/collage.webp" alt="billederamme med postkort">
+        </a>
+        <h2>DIY Vægkunst</h2>
+    </article>
+    <article>
+        <a href="artikler/artikel-2.html">
+            <img src="img-2/vindue-blomster.webp" alt="blomster i en vinduskarm">
+        </a>
+        <h2>Bæredygtige DIY Dekorationer</h2>
+    </article>
+</section>
+
+<!--button som skal linkes til deltag-->
+<section class="button">
+    <a href="deltag"></a>
+<button>Se brugerindsente billeder</button>
+</section>
+
+<hr>
+<!--anden section med artikler-->
+<section class="artikler-2">
+    <article class="article-1">
+        <a href="artikler/artikel-3.html">
+            <img src="img-2/lys.webp" alt="to lys set oppefra">
+            <h2>Bring hygge med Genbrug</h2>
+        </a>
+    </article>
+    <article class="article-2">
+        <a href="artikler/artikel-4.html">
+            <img src="img-2/mange-blomster-i-vaser.webp" alt="mange blomster i vaser">
+            <h2>Skab noget farve med blomster</h2>
+        </a>
+    </article>
+    <article class="article-3">
+        <a href="artikler/artikel-5.html">
+            <img src="img-2/maleri.webp" alt="maleri med blomster">
+            <h2>Mal dit eget kunst</h2>
+        </a>
+    </article>
+</section>
+
+</main>
+
+<footer>
+       <section class="footer-left">
+        <img src="img-2/blomster-logo-1.webp" alt="blå blomster logo">
+        <p>Artsy Space er et sted, hvor studerende kan komme for at få inspiration til hjemmet. Det er her, du kan finde billige og bæredygtige metoder til at dekorere og pynte dit hjem på budget.</p>
+    
+        <!--jeg tror jeg ender med ikke at sende dataen noget sted hend da jeg ikke har tid til at gøre det mere kompliceret-->    
+        <form action="#">
+            <label for="email">Deltag</label>
+            <input type="email" id="email" placeholder="Skriv din email">
+            <button type="submit">submit</button>
+        </form> <!-- havde glemt lukning af form-->
+    </section> 
+
+
+<section class="footer-right">
+    <p><strong>Kontaktinformation</strong></p>
+    <!--bruger address for at hjælpe SEO og brugervenlighed i stedet for min tidligere ul-->
+    <address>
+        <p>tlf: 00 00 00 00</p>
+        <p>Mail: god_mail.com</p>
+    </address>
+    <p><strong>Følg os</strong></p>
+    <p>facebook | Instagram</p>
+</section>
+</footer>
+
+</body>
+
+</html>
